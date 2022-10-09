@@ -1,5 +1,5 @@
 const express = require('express');
-const data = require('./data.json');
+const { data } = require('./data.json');
 const app = express();
 
 app.set('view engine', 'pug');
@@ -9,14 +9,14 @@ app.use('/static', express.static('public'));
 
 // ROUTES
 app.get('/', (req, res) => {
-	res.locals = data.projects;
+	const projects = res.locals = data.projects;
 	res.render('index');
 });
 app.get('/about', (req, res) => {
 	res.render('about')
 });
 app.get('/project/:id', (req, res) => {
-	res.locals = data.projects;
+	const projects = res.locals = data.projects;
 	res.render('project');
 });
 
