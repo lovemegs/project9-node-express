@@ -1,5 +1,6 @@
 const express = require('express');
 const { data } = require('./data.json');
+const { projects } = data;
 const app = express();
 
 app.set('view engine', 'pug');
@@ -17,22 +18,19 @@ app.get('/about', (req, res) => {
 });
 app.get('/project/:id', (req, res) => {
 	res.locals.projects = data.projects;
-	res.render('project');
+	res.render('project', { projects: projects[req.params.id]});
 });
 
 
 // ERROR 404
-// app.use((req, res, next) => {
-// 	const error = new Error('Page Not Found');
-// 	err.status = 404;
-// 	next(error);
-// });
-// app.use((err, req, res, next) =>{
-// 	console.log(`${err.status} ${err.message}`);
-// 	res.locals.error = err;
-// 	res.status(err.status);
-// 	res.render('error');
-// });
+app.use((req, res, next) => {
+	const err = new Error('Page Not Found');
+	err.status = 404;
+	err.message = 'Oh no, the route could not be found';
+	console.log(err.message, err.status);
+	next(err);
+});
+
 
 // LOCALHOST 3000
 app.listen(3000, () => {

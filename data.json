@@ -9,13 +9,13 @@
 				"live_link": "https://lovemegs.github.io/profile_page_v1/index.html",
 				"github_link": "https://github.com/lovemegs/profile_page_v1",
 				"image_urls": {
-					"landing-page": [
-						"/images/project_1"
+					"landing_page": [
+						"/static/images/project_1.jpg"
 					],
-					"project-page": [
-						"/images/project_1_1",
-						"/images/project_1_2",
-						"/images/project_1_3"
+					"project_page": [
+						"/static/images/project_1_1.jpg",
+						"/static/images/project_1_2.jpg",
+						"/static/images/project_1_3.jpg"
 					]
 
 				}
@@ -28,12 +28,12 @@
 				"live_link": "https://lovemegs.github.io/word_guessing_game_v1/",
 				"github_link": "https://github.com/lovemegs/word_guessing_game_v1",
 				"image_urls": {
-					"landing-page": [
-						"/images/project_2"
+					"landing_page": [
+						"/static/images/project_2.jpg"
 					],
-					"project-page": [
-						"/images/project_2_1",
-						"/images/project_2_2"
+					"project_page": [
+						"/static/images/project_2_1.jpg",
+						"/static/images/project_2_2.jpg"
 					]
 
 				}
@@ -46,14 +46,14 @@
 				"live_link": "https://lovemegs.github.io/interactive_form_v1/",
 				"github_link": "https://github.com/lovemegs/interactive_form_v1",
 				"image_urls": {
-					"landing-page": [
-						"/images/project_1"
+					"landing_page": [
+						"/static/images/project_3.jpg"
 					],
-					"project-page": [
-						"/images/project_3_1",
-						"/images/project_3_2",
-						"/images/project_3_3",
-						"/images/project_3_4"
+					"project_page": [
+						"/static/images/project_3_1.jpg",
+						"/static/images/project_3_2.jpg",
+						"/static/images/project_3_3.jpg",
+						"/static/images/project_3_4.jpg"
 					]
 
 				}
@@ -66,12 +66,12 @@
 				"live_link": "https://lovemegs.github.io/access-and-use-a-public-api_v1/",
 				"github_link": "https://github.com/lovemegs/access-and-use-a-public-api_v1",
 				"image_urls": {
-					"landing-page": [
-						"/images/project_4"
+					"landing_page": [
+						"/static/images/project_4.jpg"
 					],
-					"project-page": [
-						"/images/project_4_1",
-						"/images/project_4_2"
+					"project_page": [
+						"/static/images/project_4_1.jpg",
+						"/static/images/project_4_2.jpg"
 					]
 
 				}
@@ -84,12 +84,12 @@
 				"live_link": "",
 				"github_link": "https://github.com/lovemegs/Random-Quote-Generator",
 				"image_urls": {
-					"landing-page": [
-						"/images/project_5"
+					"landing_page": [
+						"/static/images/project_5.jpg"
 					],
-					"project-page": [
-						"/images/project_5_1",
-						"/images/project_5_2"
+					"project_page": [
+						"/static/images/project_5_1.jpg",
+						"/static/images/project_5_2.jpg"
 					]
 
 				}
