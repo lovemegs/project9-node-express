@@ -81,8 +81,8 @@
 				"project_name": "Random Quote Generator",
 				"description": "A web page that generates a random quote everytime the button is clicked",
 				"technologies": ["JavaScript"],
-				"live_link": "",
-				"github_link": "https://github.com/lovemegs/Random-Quote-Generator",
+				"live_link": "https://lovemegs.github.io/random_quote_generator/",
+				"github_link": "https://github.com/lovemegs/random_quote_generator",
 				"image_urls": {
 					"landing_page": [
 						"/static/images/project_5.jpg"
