@@ -11,36 +11,28 @@ block content
     .inner-wrapper.flex-row-wrap.two-col
       .project-info-box.box
 
-        //- Use the info in your data file and the comments below to complete this template
 
-        //- Use interpolation to dynamically add the project title
         h1= projects.project_name
-
-        //- Use interpolation to dynamically add the project description
         p= projects.description
 
+      //- Right sidebar that lists the technologies used for that project
       .project-tech-links-box.box
         h6 Technologies
         ul
-
-          //- Use an `each` iterator and interpolation to dynamically replace the li tags below with the technologies listed for this project
-          
           each technology in projects.technologies
             li= technology
 
-
+        //- Links for the projects live webpage and the link to the github repo
         a.btn-link(href=projects.live_link, target='_blank') Live Demo
         a.btn-link(href=projects.github_link, target='_blank') GitHub Repo
 
-
+    //- Project Images
     .project-img-box.box
-
-      //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
-
       img.project-img(src=projects.image_urls.project_page[0], alt=`An image of ${projects.project_name}`)
 
       img.project-img(src=projects.image_urls.project_page[1], alt=`An image of ${projects.project_name}`)
 
+      //- If statements get rid of the box outline for project pages that don't have 3 or 4 images
       if(projects.image_urls.project_page[2])
         img.project-img(src=projects.image_urls.project_page[2], alt=`An image of ${projects.project_name}`)
 

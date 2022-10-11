@@ -33,6 +33,7 @@ article {
 
 h1,h2,h3,h4,h5,p{
   font-family: 'Merriweather', serif;
+  color: #385b8d;
 }
 
 h5{
@@ -151,7 +152,7 @@ nav a span {
 .sidebar .thumbnail {
   width: 100%;
   max-width: 250px;
-  border: 4px solid #fff;
+  border: 4px solid #999;
 }
 
 .dev-intro-box {
@@ -160,6 +161,7 @@ nav a span {
 
 .sidebar h5 {
   color: #fefefe;
+  font-family: 'Tahoma';
   margin: 0 auto 0.5rem;
 }
 
@@ -171,12 +173,12 @@ nav a span {
 }
 
 .sidebar a {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: '', sans-serif;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #555;
+  color: #fefefe;
 }
 
 .header {
@@ -229,7 +231,7 @@ nav a span {
 
 .portfolio-intro h1 {
   font-size: 1.5rem;
-  color: #0a0a0a;
+  color: #385b8d;
   margin: 0 auto 8px;
 }
 
@@ -242,7 +244,7 @@ nav a span {
 }
 
 .projects-box h5 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 13px;
   letter-spacing: 2.25px;
@@ -258,7 +260,7 @@ nav a span {
 .cell img {
   width: 100%;
   min-width: 100px;
-  border: 4px solid #fff;
+  border: 4px solid #999;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
 }
 
@@ -296,7 +298,7 @@ nav a span {
   max-width: 255px;
   margin: auto 0 5px 0;
   padding: 0.85em 1em;
-  background-color: #333;
+  background-color: #385b8d;
   border: 1px solid transparent;
 }
 

@@ -3,6 +3,7 @@ const { data } = require('./data.json');
 const { projects } = data;
 const app = express();
 
+// Sets the view engine to pug
 app.set('view engine', 'pug');
 app.use('/static', express.static('public'));
 
@@ -24,11 +25,19 @@ app.get('/project/:id', (req, res) => {
 
 // ERROR 404
 app.use((req, res, next) => {
-	const err = new Error('Page Not Found');
+	const err = new Error();
 	err.status = 404;
 	err.message = 'Oh no, the route could not be found';
 	console.log(err.message, err.status);
 	next(err);
+});
+// GLOBAL ERROR HANDLER
+app.use((err, req, res, next) => {
+	if (err.status !== 404) {
+		err.status = 500;
+		err.message = 'Something went wrong on the server';
+		console.log(err.message, err.status);
+	}
 });
 
 
